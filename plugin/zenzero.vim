@@ -20,7 +20,7 @@ command! -nargs=* Zero call ZeroMode()
 
 function! ZenMode()
     set spell wrap autoindent linebreak
-    set nonumber norelativenumber nolist nocursorline
+    set nonumber norelativenumber noruler nolist nocursorline
     set textwidth=0 foldcolumn=0 wrapmargin=0 laststatus=0
     set showbreak=\ \
     set gcr=a:blinkon0              "Disable cursor blink
