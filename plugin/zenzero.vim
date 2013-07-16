@@ -3,6 +3,7 @@ function! ZeroMode()
     set nospell
     set nonumber norelativenumber
     set foldcolumn=0
+    set showbreak=\ \
     highlight! OverLength ctermbg=none guibg=none
     highlight IndentGuidesOdd ctermbg=none
     highlight IndentGuidesEven ctermbg=none
@@ -20,6 +21,7 @@ function! ZenMode()
     set spell wrap autoindent linebreak
     set nonumber norelativenumber nolist nocursorline
     set textwidth=0 foldcolumn=0 wrapmargin=0 laststatus=0
+    set showbreak=\ \
     highlight NonText ctermfg=233 ctermbg=none
     highlight! OverLength ctermbg=none guibg=none
     highlight IndentGuidesOdd ctermbg=none
