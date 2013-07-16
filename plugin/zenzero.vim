@@ -11,6 +11,7 @@ function! ZeroMode()
     autocmd InsertEnter * :set nonumber
     autocmd InsertLeave * :set norelativenumber
     :QuickfixsignsDisable
+    :ShowTrailingWhitespaceOff
 endfunction
 
 command! -nargs=* Zero call ZeroMode()
@@ -29,7 +30,8 @@ function! ZenMode()
     autocmd InsertLeave * :set norelativenumber
     :UniCycleOn
     :QuickfixsignsDisable
-    silent !tmux set status off
+    :ShowTrailingWhitespaceOff
+    "silent !tmux set status off
 endfunction
 
 command! -nargs=* Zen call ZenMode()
